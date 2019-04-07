@@ -1,7 +1,7 @@
 global pos1
 global pos2
 pos1=0
-pos2=75
+pos2=75  # lepiej stosować wartości uniwersalne stworzone w oparciu o wbudowane zmienne
 def setup():
     size(200,200)
 def draw():
@@ -9,7 +9,7 @@ def draw():
     kolory=(100,255,0,125,199,130,150,59) #wartosci z ktorych program sobie jakas wylosuje i przypisze do zmiennej r1, potem to samo do r2 i r3
     r1=int(random(7))
     r2=int(random(7))
-    r3=int(random(7))
+    r3=int(random(7))  # losowanie to trochę pójście na łątwiznę
     fill(kolory[r1],kolory[r2],kolory[r3]) #wylosowane z listy wartosci beda kolejno RGB r1=R r2=G r3=B wiec stworza jakis kolor
     global pos1
     global pos2
